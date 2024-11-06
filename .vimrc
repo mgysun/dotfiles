@@ -35,6 +35,8 @@ set wrap
 
 call plug#begin()
 Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
+Plug 'preservim/nerdtree'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 syntax enable
@@ -43,12 +45,4 @@ set t_Co=256
 colorscheme nightfly
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
-
-call plug#begin()
-Plug 'preservim/nerdtree'
-call plug#end()
-
-call plug#begin()
-Plug 'dense-analysis/ale'
-call plug#end()
 
